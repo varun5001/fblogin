@@ -27,7 +27,7 @@ try {
 // see if we have a session
 if ( isset( $session ) ) {
   // graph api request for user data
-  $request = new FacebookRequest( $session, 'GET', '/me' );
+  $request = new FacebookRequest( $session, 'GET', '/me?locale=en_US&fields=id,name,email');
   $response = $request->execute();
   // get response
   $graphObject = $response->getGraphObject();
