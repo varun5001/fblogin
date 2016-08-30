@@ -11,8 +11,8 @@ session_start();
   <?php if ($_SESSION['FBID']): ?>      <!--  After user login  -->
 <div class="container">
 <div class="hero-unit">
-  <h1>Hello <?php echo $_SESSION['USERNAME']; ?></h1>
-  <p>Welcome to "facebook login" tutorial</p>
+  <h1>Hello <?php echo $_SESSION['FULLNAME']; ?></h1>
+  <p>Welcome to "facebook login"</p>
   </div>
 <div class="span4">
  <ul class="nav nav-list">
@@ -32,7 +32,7 @@ session_start();
            Not Connected
 <div>
       <a href="fbconfig.php">Login with Facebook</a></div>
-	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
+	 
 	  </div>
       </div>
     <?php endif ?>
